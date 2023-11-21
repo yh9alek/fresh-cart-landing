@@ -6,10 +6,10 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fresh Cart</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1129195909796860029/1176623376576561162/icon.PNG?ex=656f8ae9&is=655d15e9&hm=759e32a1a0d497573b6f3b13068180a75d93a8a64f8aecb794ea0206aeb305bb&">
+        <link rel="stylesheet" href="/assets/css/home.css">
     </head>
     <body>
-        <?php $content ?>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <?= $content ?>
     </body>
 </html>

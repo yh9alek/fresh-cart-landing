@@ -6,7 +6,7 @@ use app\Router;
 class ProductsController
 {
     public function home(Router $router) {
-        echo "Home";
+        $router->renderView('products/home');
     }
 
     public function signin(Router $router) {

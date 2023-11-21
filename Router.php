@@ -29,4 +29,11 @@ class Router
         }
         else echo "Page not found";
     }
+
+    public function renderView($view, $params = []) {
+        ob_start();
+        include_once __DIR__."/views/$view.php";
+        $content = ob_get_clean();
+        include_once __DIR__."/views/_layout.php";
+    }
 }
