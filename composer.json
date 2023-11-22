@@ -11,5 +11,7 @@
             "email": "yh9dev@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "twbs/bootstrap-icons": "^1.11"
+    }
 }
