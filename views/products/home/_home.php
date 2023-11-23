@@ -3,4 +3,5 @@ require_once "header.php";
 require_once "hero.php";
 require_once "categories.php";
 require_once "offers.php";
+require_once "products.php";
 ?>
