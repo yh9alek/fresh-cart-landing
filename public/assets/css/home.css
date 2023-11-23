@@ -19,6 +19,11 @@
     font-family: "Neue regular";
 }
 
+:root {
+    --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+    accent-color: #3DBC3E;
+}
+
 .form__control {
     font-family: "Neue regular";
     font-size: 15px;
@@ -370,10 +375,6 @@ option {
     background-color: #002838;
 }
 
-button.slick-arrow {
-    display: none !important;
-}
-
 ul.slick-dots {
     position: absolute;
     bottom: 15px;
@@ -387,6 +388,91 @@ ul.slick-dots > li {
 
 ul.slick-dots > li > button::before {
     font-size: 8px;
+}
+
+/* CATEGOIRES */
+
+.categories__section {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.categories__section .slick-track {
+    padding-bottom: 12px;
+}
+
+.categories__title {
+    font-size: 25px;
+    color: #001E2B;
+    position: relative;
+    top: -7px;
+}
+
+.categories__cards {
+    margin-top: 22px;
+    margin-right: -17px;
+    position: relative;
+}
+
+.categories__card {
+    width: 264px;
+    height: 220px !important;
+    margin-right: 17px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #E0E3E2;
+    transition: all .15s ease-out;
+}
+
+.categories__card:hover {
+    border: 1px solid #3DBC3E;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.categories__card > figure {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+.categories__card > figure > .categories__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories__desc {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5E6D76;
+}
+
+.categories__cards button.slick-prev::before, .categories__cards button.slick-next::before{
+    color: #3DBC3E;
+}
+
+.categories__cards button.slick-prev:before, .categories__cards button.slick-next:before{
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+.categories__cards .slick-prev, .categories__cards .slick-next {
+    position: absolute !important;
+    top: -47px;
+}
+
+.categories__cards .slick-prev {
+    left: calc(100% - 93px);
+}
+
+.categories__cards .slick-next {
+    right: 32px;
 }
 
 /* MEDIA QUERYS */
@@ -564,6 +650,10 @@ ul.slick-dots > li > button::before {
         font-size: 12px;
         margin-top: 10px;
     }
+
+    .categories__title {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -591,9 +681,37 @@ ul.slick-dots > li > button::before {
     }
 }
 
+@media screen and (max-width: 490px){
+    .categories__card {
+        padding: 10px 20px;
+        height: 150px !important;
+    }
+
+    .categories__card figure {
+        width: 90px;
+        height: 90px;
+    }
+
+    .categories__desc {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .hero__card img {
         right: -120px;
+    }
+
+    .categories__section {
+        margin-top: 10px;
+    }
+
+    .categories__cards .slick-prev, .categories__cards .slick-next {
+        top: -34px;
+    }
+
+    .categories__cards {
+        margin-top: 10px;
     }
 }
 
@@ -606,6 +724,16 @@ ul.slick-dots > li > button::before {
 @media screen and (max-width: 370px) {
     .hero__card {
         padding: 60px 30px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .categories__title {
+        width: 100px !important;
+    }
+
+    .categories__cards .slick-prev, .categories__cards .slick-next {
+        top: -40px;
     }
 }
 
