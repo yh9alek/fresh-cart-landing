@@ -31,4 +31,20 @@ $(document).ready(function(){
             },
         ]
     });
+    $('.offers__cards').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 781,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ]
+    });
 });

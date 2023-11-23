@@ -219,6 +219,7 @@ header {
     border: none;
     width: 182px;
     margin-right: 20px;
+    transition: background-color .2s ease-out;
 }
 
 .header__departments-btn:hover {
@@ -475,6 +476,59 @@ ul.slick-dots > li > button::before {
     right: 32px;
 }
 
+/* OFFERS */
+
+.offers__container {
+    margin-top: 20px;
+}
+
+.offers__cards {
+    margin-right: -32px;
+}
+
+.offers__card {
+    width: 537px;
+    height: 208px;
+    background-color: #EDEBE6;
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-right: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offers__card .card__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+}
+
+.offers__texts {
+    position: relative;
+    z-index: 1;
+}
+
+.offers__card .card__title {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.offers__card .card__p {
+    font-size: 14px;
+    background-color: transparent;
+    color: #5E6D76;
+    padding: 0;
+}
+
+.offers__card .card__p span {
+    font-family: "Neue medium";
+}
+
+.offers__card .card__cta {
+    margin-top: 18px;
+}
+
 /* MEDIA QUERYS */
 @media screen and (min-width: 1366px) {
     .container {
@@ -504,6 +558,24 @@ ul.slick-dots > li > button::before {
 
     .card__title {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .offers__card {
+        padding: 20px;
+    }
+
+    .offers__card .card__img {
+        width: 270px;
+    }
+
+    .offers__card .card__title {
+        font-size: 20px;
+    }
+
+    .offers__card .card__p {
+        font-size: 12px;
     }
 }
 
@@ -704,6 +776,7 @@ ul.slick-dots > li > button::before {
 
     .categories__section {
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .categories__cards .slick-prev, .categories__cards .slick-next {
