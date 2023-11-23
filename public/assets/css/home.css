@@ -684,7 +684,7 @@ ul.slick-dots > li > button::before {
     text-align: center;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     transition: all .2s ease-in-out;
     z-index: -1;
     opacity: 0;
