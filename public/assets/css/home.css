@@ -761,11 +761,155 @@ ul.slick-dots > li > button::before {
     background-color: #198754;
 }
 
+/* SELLS */
+
+.sells__section {
+    margin-top: 60px;
+}
+
+.sells__daily {
+    width: 264px;
+    height: 469px;
+    overflow: hidden;
+    padding: 30px;
+    margin-right: 13px;
+    border-radius: 8px;
+    background-image: url('https://cdn.discordapp.com/attachments/1129195909796860029/1177344921397633104/cafe.jpg?ex=65722ae7&is=655fb5e7&hm=e98ec62c89d728697f0aa21782c70d78fce85fec7c4216176643e7965e080771&');
+    background-size: cover;
+    background-position-x: -20px;
+    color: #fff;
+}
+
+.sells__cards {
+    width: 75%;
+}
+
+.daily__title {
+    margin-bottom: 12px;
+}
+
+.daily__p {
+    font-size: 13px;
+    font-weight: bold;
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+.card__cta.daily {
+    background-color: #0AAD0A;
+    margin-top: 22px;
+}
+
+.card__cta.daily:hover {
+    background-color: #0c800c;
+    cursor: pointer;
+}
+
+.sells__section .categories__title {
+    margin-bottom: 20px;
+}
+
+.sells__section .categories__title + div {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.sells__cards .products__card {
+    width: 264px;
+    height: 534px;
+    padding-top: 30px;
+}
+
+.sells__cards .products__card figure {
+    width: 170px;
+    height: 170px;
+}
+
+.sells__cards .products__stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sells__cards .products__stars > div {
+    width: 100px;
+    margin-right: 0;
+}
+
+.sells__cards .products__stars > div > p {
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.sells__cards .products__card .products__button {
+    top: calc(50% - 105px);
+}
+
+.sells__cards .price {
+    font-size: 14px;
+    font-family: "Neue medium";
+}
+
+.sells__cards .price span {
+    color: #5E6D76;
+    text-decoration: line-through;
+}
+
+.sells__cards .products__own {
+    margin-bottom: 13px;
+}
+
+.sells__cards .products__cta.form__control {
+    padding: 12px 17px;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Neue regular";
+    font-weight: bold;
+    border: none;
+}
+
+.digits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.separe {
+    width: 61px;
+    height: 57px;
+    padding: 10px;
+    border: 1px solid #E0E3E2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.separe > p:first-of-type {
+    font-size: 13.5px;
+    color: #001E2B;
+    font-weight: bold;
+}
+
+.separe > p:last-of-type {
+    font-size: 13px;
+    color: #8C959E;
+    font-weight: bold;
+}
+
 /* MEDIA QUERYS */
 @media screen and (min-width: 1366px) {
     .container {
         padding: 10px 129.766px;
         max-width: 1366px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .sells__cards {
+        width: 70%;
     }
 }
 
@@ -808,6 +952,10 @@ ul.slick-dots > li > button::before {
 
     .offers__card .card__p {
         font-size: 12px;
+    }
+
+    .sells__cards {
+        width: 62%;
     }
 }
 
@@ -926,11 +1074,24 @@ ul.slick-dots > li > button::before {
     .card__p:nth-of-type(2){
         width: 300px;
     }
+
+    .sells__cards {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .hero__card img {
         right: -130px;
+    }
+
+    .sells__container > div {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .sells__cards {
+        width: 100%;
     }
 }
 
@@ -950,9 +1111,20 @@ ul.slick-dots > li > button::before {
     }
 
     .card__cta {
-        padding: 10px 10px;
+        padding: 10px;
         font-size: 12px;
         margin-top: 10px;
+    }
+
+    .sells__cards .products__cta {
+        padding: 10px !important;
+        font-size: 12px !important;
+        margin-top: 10px !important;
+    }
+
+    .sells__cards .products__card figure {
+        width: 130px;
+        height: 130px;
     }
 
     .categories__title {
@@ -1023,6 +1195,11 @@ ul.slick-dots > li > button::before {
     .categories__cards {
         margin-top: 10px;
     }
+
+    .sells__section {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1062,5 +1239,9 @@ ul.slick-dots > li > button::before {
 
     .hero__card img {
         right: -200px;
+    }
+
+    .sells__daily {
+        width: 100%;
     }
 }
