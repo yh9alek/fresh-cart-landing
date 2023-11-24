@@ -5,4 +5,5 @@ require_once "categories.php";
 require_once "offers.php";
 require_once "products.php";
 require_once "sells.php";
+require_once "benefits.php";
 ?>

@@ -899,6 +899,45 @@ ul.slick-dots > li > button::before {
     font-weight: bold;
 }
 
+/* BENEFITS */
+
+.benefits__section {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.benefits__benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: 30px;
+}
+
+.benefits__benefit > i {
+    display: inline-block;
+    font-size: 35px;
+    color: #0AAD0A;
+    margin-bottom: 20px;
+}
+
+.benefits__benefit > p:first-of-type {
+    font-size: 17px;
+    color: #001E2B;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.benefits__benefit > p:last-of-type {
+    font-size: 13px;
+    color: #74858f;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+}
+
+.benefits__benefit > p:last-of-type span {
+    color: #0AAD0A;
+}
+
 /* MEDIA QUERYS */
 @media screen and (min-width: 1366px) {
     .container {
