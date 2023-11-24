@@ -31,25 +31,5 @@
                 <button class="menu__btn"><img src="https://cdn.discordapp.com/attachments/1129195909796860029/1176675266634985542/menu.PNG?ex=656fbb3d&is=655d463d&hm=fa9514fc71a859f2a36acd02f93d1a79fef848a70f4c77b71b83fd4dde9f6458&"></button>
             </div>
         </div>
-        <div class="header__r2">
-            <button class="header__departments-btn form__control">All Departaments</button>
-            <div class="header__selects">
-                <select class="header__select header__home form__control">
-                    <option>Home</option>
-                </select>
-                <select class="header__select header__shop form__control">
-                    <option>Shop</option>
-                </select>
-                <select class="header__select header__stores form__control">
-                    <option>Stores</option>
-                </select>
-                <select class="header__select header__menu form__control">
-                    <option>Mega Menu</option>
-                </select>
-                <select class="header__select header__pages form__control">
-                    <option>Pages</option>
-                </select>
-            </div>
-        </div>
     </div>
 </header>
