@@ -1282,11 +1282,6 @@ hr:nth-of-type(2) {
 }
 
 @media screen and (max-width: 550px) {
-    .hero__card {
-        height: 300px !important;
-        padding: 40px 50px;
-    }
-
     .hero__card img {
         width: 300px;
         right: -70px;
@@ -1331,19 +1326,6 @@ hr:nth-of-type(2) {
         font-size: 15px;
     }
 
-    .card__p:first-of-type {
-        font-size: 8px;
-    }
-
-    .card__title {
-        font-size: 20px;
-        width: 200px;
-    }
-
-    .card__p:nth-of-type(2) {
-        font-size: 10px;
-    }
-
     .card__cta {
         padding: 10px 10px;
         font-size: 10px;
@@ -1370,6 +1352,10 @@ hr:nth-of-type(2) {
 @media screen and (max-width: 450px) {
     .hero__card img {
         right: -120px;
+    }
+
+    .hero__card {
+        padding: 100px 30px;
     }
 
     .categories__section {
@@ -1404,7 +1390,21 @@ hr:nth-of-type(2) {
 
 @media screen and (max-width: 370px) {
     .hero__card {
-        padding: 60px 30px;
+        padding-top: 50px;
+    }
+
+    .hero__card .card__p {
+        font-size: 9px;
+    }
+
+    .hero__card .card__title {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .hero__card .card__p:nth-of-type(2) {
+        font-size: 10px;
+        width: 100%;
     }
 
     .footer__links > div:nth-of-type(2) {
