@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fresh Cart</title>
         <link rel="stylesheet" href="/assets/css/home.css">
+        <link rel="stylesheet" href="/assets/css/signup.css">
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1129195909796860029/1177757899800465429/icon.png?ex=6573ab84&is=65613684&hm=be8d91607f53ee0aff36df26d6e45a7ea3ae164f6b248fb10ea6181f918e7cfb&">
         <!-- Font Awesome CSS link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,9 +20,10 @@
     <body>
         <?= $content ?>
         <!-- Slick sliders JQuery and JS scripts -->
+        <?php require_once __DIR__.'/../views/partials/footer.php'; ?>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="/assets/js/sliders.js"></script>
-        <script src="/assets/js/home.js"></script>
+        <script src="/assets/js/<?= substr($_SERVER['PATH_INFO'], 1) ?>.js"></script>
     </body>
 </html>
