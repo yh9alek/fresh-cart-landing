@@ -1,0 +1,46 @@
+@font-face {
+    src: url("../fonts/NHaasGroteskTXPro-55Rg.ttf");
+    font-family: 'Neue regular';
+}
+@font-face {
+    src: url("../fonts/NHaasGroteskTXPro-65Md.ttf");
+    font-family: 'Neue medium';
+}
+@font-face {
+    src: url("../fonts/NHaasGroteskTXPro-75Bd.ttf");
+    font-family: 'Neue bold';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Neue regular";
+}
+
+:root {
+    --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+    accent-color: #3DBC3E;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.form__control {
+    font-family: "Neue regular";
+    font-size: 15px;
+    padding: 11px 17px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #8C959E;
+    background-color: #fff;
+    color: #8A8D8F;
+}
+
+.container {
+    padding: 10px 9.5%;
+    margin: 0 auto;
+}
