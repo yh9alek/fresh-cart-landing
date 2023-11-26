@@ -4,7 +4,7 @@ const input_pass = document.querySelector('input[type="password"]');
 
 let view = false;
 
-document.addEventListener('click', e => {
+view_button.addEventListener('click', e => {
     e.preventDefault();
     if(e.target.closest('.view__button')) {
         view = !view;

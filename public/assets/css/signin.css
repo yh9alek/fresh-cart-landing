@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 header {
     padding: 10px 0 7px;
     border-bottom: 1px solid #E2E5E4;
@@ -121,7 +125,6 @@ input[type="email"] + div {
     position: relative;
 }
 
-input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     border: 1px solid #0AAD0A;
@@ -129,7 +132,7 @@ input[type="password"]:focus {
 
 .view__button {
     position: absolute;
-    top: calc(50% - 15px);
+    top: calc(50% - 23px);
     right: 16px;
     height: 16px;
     line-height: 16px;
@@ -161,14 +164,43 @@ input[type="submit"]:hover {
     background-color: #0c800c;
 }
 
-form p:last-of-type {
-    font-size: 12px;
+form p:last-of-type,
+form .p {
+    font-size: 14px;
     color: #5E6D76;
     font-weight: bold;
 }
 
+.forgot {
+    font-size: 14px;
+    color: #5E6D76;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.forgot a {
+    color: #0AAD0A;
+    text-decoration: none;
+}
+
 form p:last-of-type span {
     color: #0AAD0A;
+}
+
+input[type="email"] + div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+input[type="email"] + div > div > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }
 
 @media screen and (max-width: 950px) {
@@ -226,6 +258,12 @@ form p:last-of-type span {
     .signup__section figure {
         width: 300px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .view__button {
+        top: calc(50% - 32px);
     }
 }
 
