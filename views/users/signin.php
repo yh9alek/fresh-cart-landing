@@ -16,10 +16,10 @@
                         <label for="remember" class="p">Remember me</label>
                         <input type="checkbox" name="remember" id="remember">
                     </div>
-                    <p class="forgot">Forgot password? <a href="#">Reset It</a></p>
+                    <p class="forgot">Forgot password? <a href="/reset">Reset It</a></p>
                 </div>
             </div>
-            <input type="submit" value="Register" class="form__control">
+            <input type="submit" value="Sign In" class="form__control">
             <p>Don’t have an account? <a href="/signup"><span>Sign Up</span></a></p>
         </form>
     </div>

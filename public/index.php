@@ -14,5 +14,7 @@ $router->get('/signup', [Controller::class, 'signup']);
 $router->post('/signup', [Controller::class, 'signup']);
 $router->get('/signin', [Controller::class, 'signin']);
 $router->post('/signin', [Controller::class, 'signin']);
+$router->get('/reset', [Controller::class, 'reset']);
+$router->post('/reset', [Controller::class, 'reset']);
 
 $router->resolve();

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/assets/css/footer.css">
         <?php $path = $_SERVER['PATH_INFO']; ?>
         <?php if(!$path) $path = '/home'; ?>
+        <?php if($path !== '/home') $path = 'sign'; ?>
         <link rel="stylesheet" href="/assets/css/<?= $path ?>.css">
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1129195909796860029/1177757899800465429/icon.png?ex=6573ab84&is=65613684&hm=be8d91607f53ee0aff36df26d6e45a7ea3ae164f6b248fb10ea6181f918e7cfb&">
         <!-- Font Awesome CSS link -->

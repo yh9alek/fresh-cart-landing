@@ -16,4 +16,8 @@ class Controller
     public function signin(Router $router) {
         $router->renderView('users/signin');
     }
+
+    public function reset(Router $router) {
+        $router->renderView('users/reset');
+    }
 }
