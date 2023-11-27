@@ -16,5 +16,7 @@ $router->get('/signin', [Controller::class, 'signin']);
 $router->post('/signin', [Controller::class, 'signin']);
 $router->get('/reset', [Controller::class, 'reset']);
 $router->post('/reset', [Controller::class, 'reset']);
+$router->get('/wishlist', [Controller::class, 'wishlist']);
+$router->post('/wishlist', [Controller::class, 'wishlist']);
 
 $router->resolve();

@@ -20,4 +20,8 @@ class Controller
     public function reset(Router $router) {
         $router->renderView('users/reset');
     }
+
+    public function wishlist(Router $router) {
+        $router->renderView('products/home/wishlist');
+    }
 }

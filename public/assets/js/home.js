@@ -7,11 +7,11 @@ const header_mid = document.querySelector('.header__mid');
 const btn__cart = document.querySelector('.btn__cart');
 const cart__exit = document.querySelector('.cart__exit');
 const cart__shop = document.querySelector('.cart');
-const btn__plus = document.querySelector('.btn_+');
-const btn__minus = document.querySelector('.btn_-');
+const btn__plus = document.querySelector('.btn_p');
+const btn__minus = document.querySelector('.btn_m');
 
 document.addEventListener('click', e => {
-    e.preventDefault();
+    if(!e.target.closest('input[type="checkbox"]')) e.preventDefault();
     if(e.target.closest('.menu__btn') == menu_btn) {
         background.classList.add('active');
         header_mid.classList.add('active');
@@ -30,5 +30,4 @@ document.addEventListener('click', e => {
         background_cart.classList.remove('active');
         cart__shop.classList.remove('active');
     }
-
 });

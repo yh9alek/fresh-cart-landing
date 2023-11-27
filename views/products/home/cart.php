@@ -180,11 +180,11 @@
                     </div>
                     <div class="col-r">
                         <div class="controls">
-                            <button class="btn_-">-</button>
+                            <button class="btn_m">-</button>
                             <div class="inp-number">
                                 <p>1</p>
                             </div>
-                            <button class="btn_+">+</button>
+                            <button class="btn_p">+</button>
                         </div>
                         <div class="prices">
                             <p>$5.00</p>

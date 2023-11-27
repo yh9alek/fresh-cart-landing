@@ -882,7 +882,7 @@ ul.slick-dots > li > button::before {
 .cart {
     position: fixed;
     top: 0;
-    right: -560px;
+    right: -1000px;
     width: 560px;
     background-color: #fff;
     height: 100vh;

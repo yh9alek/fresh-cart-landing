@@ -16,7 +16,7 @@
                         </figure>
                         <h3 class="title">FreshCart</h3>
                     </div>
-                    <a class="header__exit" href="/home?active=null"><i class="fa-solid fa-xmark"></i></a>
+                    <a class="header__exit"><i class="fa-solid fa-xmark"></i></a>
                 </div>
                 <form class="search__container" method="post">
                     <input name="search" class="header__search form__control" type="search" placeholder="Search for products">
