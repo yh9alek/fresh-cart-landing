@@ -27,9 +27,10 @@
             <div class="header__btns">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+                <button class="btn__cart"><i class="fa-solid fa-bag-shopping"></i></button>
                 <button class="menu__btn"><img src="https://cdn.discordapp.com/attachments/1129195909796860029/1176675266634985542/menu.PNG?ex=656fbb3d&is=655d463d&hm=fa9514fc71a859f2a36acd02f93d1a79fef848a70f4c77b71b83fd4dde9f6458&"></button>
             </div>
         </div>
     </div>
+    <div class="background-cart"></div>
 </header>

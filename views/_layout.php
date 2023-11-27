@@ -8,9 +8,9 @@
         <title>Fresh Cart</title>
         <link rel="stylesheet" href="/assets/css/init.css">
         <link rel="stylesheet" href="/assets/css/footer.css">
-        <?php $path = $_SERVER['PATH_INFO']; ?>
-        <?php if(!$path) $path = '/home'; ?>
-        <?php if($path !== '/home') $path = 'sign'; ?>
+        <?php $path = $_SERVER['PATH_INFO'] ?? null; ?>
+        <?php if(!$path || $path = '/home') $path = 'home'; ?>
+        <?php if($path !== 'home') $path = 'sign'; ?>
         <link rel="stylesheet" href="/assets/css/<?= $path ?>.css">
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1129195909796860029/1177757899800465429/icon.png?ex=6573ab84&is=65613684&hm=be8d91607f53ee0aff36df26d6e45a7ea3ae164f6b248fb10ea6181f918e7cfb&">
         <!-- Font Awesome CSS link -->
@@ -27,7 +27,12 @@
         <!-- Slick sliders JQuery and JS scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <?php if($path === 'sign'): ?>
         <script src="/assets/js/eye.js"></script>
+        <?php endif; ?>
+        <?php if($path === 'home' || !$path): ?>
+            <script src="/assets/js/home.js"></script>
+        <?php endif; ?>
         <script src="/assets/js/sliders.js"></script>
     </body>
 </html>
