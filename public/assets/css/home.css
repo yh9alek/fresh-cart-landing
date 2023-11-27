@@ -33,6 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .header__title {
@@ -133,7 +134,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 110px;
+    width: max-content;
 }
 
 .header__btns button {
@@ -226,6 +227,24 @@ header {
     background-color: #00000077;
     z-index: 1000;
     transition: all .2s ease-out;
+}
+
+.admin-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin {
+    display: inline-block;
+    position: relative;
+    font-size: 8px;
+    top: -3px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: #FFC107;
+    color: #fff;
 }
 
 /* HERO */
