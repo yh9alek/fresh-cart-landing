@@ -22,13 +22,17 @@
 .btn__add {
     width: max-content;
     border: 0;
-    background-color: #0AAD0A;
+    background-color: #8A8D8F;
     color: #fff;
     transition: background-color .2s ease-out;
     align-self: flex-end;
 }
 
-.btn__add:hover {
+.btn__add.active {
+    background-color: #0AAD0A;
+}
+
+.btn__add.active:hover {
     background-color: #0c800c;
     cursor: pointer;
 }
@@ -134,8 +138,15 @@ td .status {
     width: max-content;
     border-radius: 5px;
     padding: 3.5px 7px;
-    background-color: #198754;
     color: #fff;
+}
+
+td .status.out {
+    background-color: #D5252E;
+}
+
+td .status.in {
+    background-color: #198754;
 }
 
 td .add {

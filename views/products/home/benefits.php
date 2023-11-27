@@ -1,4 +1,4 @@
-<section class="benefits__section">
+<section class="benefits__section" id="benefits">
     <div class="benefits__container container">
         <div class="benefits__benefits">
             <div class="benefits__benefit">

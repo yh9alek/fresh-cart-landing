@@ -125,6 +125,7 @@ input[type="email"] + div {
     position: relative;
 }
 
+input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     border: 1px solid #0AAD0A;

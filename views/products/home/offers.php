@@ -1,4 +1,4 @@
-<section class="offers__section">
+<section class="offers__section" id="offers">
     <div class="offers__container container">
         <div class="offers__cards">
             <div class="offers__card">

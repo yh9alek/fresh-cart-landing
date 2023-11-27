@@ -1,4 +1,4 @@
-<section class="hero__section">
+<section class="hero__section" id="hero">
     <div class="hero__container container">
         <div class="hero__cards">
             <div class="hero__card" style="background-color: #EEEBE4;">

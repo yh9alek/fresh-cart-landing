@@ -483,7 +483,7 @@ ul.slick-dots > li > button::before {
 
 .products__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(207px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(207px, 1fr));
     margin-right: -13px;
     row-gap: 13px;
 }
@@ -700,6 +700,22 @@ ul.slick-dots > li > button::before {
 .products__p.discount {
     display: inline-block;
     background-color: #198754;
+}
+
+.products__p.stock {
+    display: inline-block;
+    padding: 0;
+    bottom: 18px;
+    right: 80px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 /* SELLS */

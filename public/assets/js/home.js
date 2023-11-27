@@ -9,25 +9,36 @@ const cart__exit = document.querySelector('.cart__exit');
 const cart__shop = document.querySelector('.cart');
 const btn__plus = document.querySelector('.btn_p');
 const btn__minus = document.querySelector('.btn_m');
+const btn__continue = document.querySelector('.btn__continue');
 
-document.addEventListener('click', e => {
-    if(!e.target.closest('input[type="checkbox"]')) e.preventDefault();
-    if(e.target.closest('.menu__btn') == menu_btn) {
-        background.classList.add('active');
-        header_mid.classList.add('active');
-        header_left.classList.add('active');
-    }
-    if(e.target.closest('.header__exit') == menu_exit) {
-        background.classList.remove('active');
-        header_mid.classList.remove('active');
-        header_left.classList.remove('active');
-    }
-    if(e.target.closest('.btn__cart') == btn__cart) {
-        background_cart.classList.add('active');
-        cart__shop.classList.add('active');
-    }
-    if(e.target.closest('.cart__exit') == cart__exit) {
-        background_cart.classList.remove('active');
-        cart__shop.classList.remove('active');
-    }
+menu_btn.addEventListener('click', e => {
+    e.preventDefault();
+    background.classList.add('active');
+    header_mid.classList.add('active');
+    header_left.classList.add('active');
+});
+
+menu_exit.addEventListener('click', e => {
+    e.preventDefault();
+    background.classList.remove('active');
+    header_mid.classList.remove('active');
+    header_left.classList.remove('active');
+});
+
+btn__cart.addEventListener('click', e => {
+    e.preventDefault();
+    background_cart.classList.add('active');
+    cart__shop.classList.add('active');
+});
+
+cart__exit.addEventListener('click', e => {
+    e.preventDefault();
+    background_cart.classList.remove('active');
+    cart__shop.classList.remove('active');
+});
+
+btn__continue.addEventListener('click', e => {
+    e.preventDefault();
+    background_cart.classList.remove('active');
+    cart__shop.classList.remove('active');
 });

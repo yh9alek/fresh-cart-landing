@@ -1,4 +1,4 @@
-<header>
+<header id="header">
     <div class="header__container container">
         <div class="header__r1">
             <div class="header__title">
@@ -25,8 +25,8 @@
                 <button type="submit" class="header__location-btn form__control"><i class="fa-solid fa-location-dot"></i> Location</button>
             </div>
             <div class="header__btns">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-user"></i>
+                <a class="btn__wishlist" href="/wishlist"><i class="fa-regular fa-heart"></i></a>
+                <a class="btn__wishlist" href="/signup"><i class="fa-regular fa-user"></i></a>
                 <button class="btn__cart"><i class="fa-solid fa-bag-shopping"></i></button>
                 <button class="menu__btn"><img src="https://cdn.discordapp.com/attachments/1129195909796860029/1176675266634985542/menu.PNG?ex=656fbb3d&is=655d463d&hm=fa9514fc71a859f2a36acd02f93d1a79fef848a70f4c77b71b83fd4dde9f6458&"></button>
             </div>

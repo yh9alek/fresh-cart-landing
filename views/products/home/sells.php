@@ -1,4 +1,4 @@
-<section class="sells__section">
+<section class="sells__section" id="sells">
     <div class="sells__container container">
         <h3 class="categories__title">Daily Best Sells</h3>
         <div>

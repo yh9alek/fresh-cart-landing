@@ -1,6 +1,6 @@
 <?php require_once "cart.php"; ?>
 <?php require_once "header.php"; ?>
-<section class="wishlist__section">
+<section class="wishlist__section" id="wishlist">
     <div class="wishlist__container container">
         <div class="wishlist__header">
             <div>
@@ -13,7 +13,7 @@
             <table>
                 <tr>
                     <th>
-                        <input type="checkbox">
+                        <input type="checkbox" class="check-all">
                     </th>
                     <th></th>
                     <th>Product</th>
@@ -22,9 +22,9 @@
                     <th>Actions</th>
                     <th>Remove</th>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" class="check">
                     </td>
                     <td>
                         <figure>
@@ -39,7 +39,7 @@
                         <p class="wprice">$35.00</p>
                     </td>
                     <td>
-                        <p class="status">In Stock</p>
+                        <p class="status in">In Stock</p>
                     </td>
                     <td>
                         <a class="add" href="">Add to Cart</a>
@@ -54,7 +54,7 @@
                             </svg>
                         </a>
                     </td>
-                </tr>
+                </tr>-->
             </table>
         </div>
     </div>
