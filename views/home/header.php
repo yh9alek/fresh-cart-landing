@@ -22,7 +22,7 @@
                     <input name="search" class="header__search form__control" type="search" placeholder="Search for products">
                     <button type="submit" class="header__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <a type="submit" class="header__location-btn form__control"><i class="bi bi-wrench-adjustable-circle-fill"></i> Settings</a>
+                <a href="/admin" class="header__location-btn form__control"><i class="bi bi-gear-fill"></i> Settings</a>
             </div>
             <div class="header__btns">
                 <a class="btn__wishlist" href="/wishlist"><i class="fa-regular fa-heart"></i></a>

@@ -113,6 +113,7 @@ header {
     color: #8A8D8F;
     width: max-content;
     background-color: #fff;
+    text-decoration: none;
     transition: all .2s ease;
 }
 
@@ -124,10 +125,6 @@ header {
 
 .header__location-btn:hover > i {
     color: #0AAD0A;
-}
-
-.header__location-btn i {
-    margin-left: 10px;
 }
 
 .header__btns {

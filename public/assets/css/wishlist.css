@@ -180,6 +180,13 @@ td .rem {
 
 /* MEDIA QUERYS */
 
+@media screen and (min-width: 1366px) {
+    .container {
+        padding: 10px 129.766px;
+        max-width: 1366px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     td .add {
         font-size: 10px;

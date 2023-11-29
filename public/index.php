@@ -18,5 +18,7 @@ $router->get('/reset', [Controller::class, 'reset']);
 $router->post('/reset', [Controller::class, 'reset']);
 $router->get('/wishlist', [Controller::class, 'wishlist']);
 $router->post('/wishlist', [Controller::class, 'wishlist']);
+$router->get('/admin', [Controller::class, 'admin']);
+$router->post('/admin', [Controller::class, 'admin']);
 
 $router->resolve();

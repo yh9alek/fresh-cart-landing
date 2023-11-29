@@ -6,7 +6,7 @@ use app\Router;
 class Controller
 {
     public function home(Router $router) {
-        $router->renderView('products/home/_home');
+        $router->renderView('/home/_home');
     }
 
     public function signup(Router $router) {
@@ -22,6 +22,10 @@ class Controller
     }
 
     public function wishlist(Router $router) {
-        $router->renderView('products/home/wishlist');
+        $router->renderView('/home/wishlist');
+    }
+
+    public function admin(Router $router) {
+        $router->renderView('/admin/admin');
     }
 }

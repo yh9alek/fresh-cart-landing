@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="line"></div>
-            </div>-->
+            </div> -->
             <div class="cart__btns">
                 <button class="btn__continue form__control">Continue Shopping</button>
                 <button class="btn__update form__control">Update Cart</button>

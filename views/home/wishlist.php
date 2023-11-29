@@ -54,7 +54,7 @@
                             </svg>
                         </a>
                     </td>
-                </tr>-->
+                </tr> -->
             </table>
         </div>
     </div>

@@ -16,6 +16,7 @@
             case '/signin': $path = 'sign'; break;
             case '/reset': $path = 'sign'; break;
             case '/wishlist': $path = 'wishlist'; break;
+            case '/admin': $path = 'admin'; break;
         }?>
         <?php if($path === 'wishlist' || $path === 'home'): ?>
             <link rel="stylesheet" href="/assets/css/home.css">
@@ -23,6 +24,10 @@
         <?php endif; ?>
         <?php if($path === 'sign'): ?>
             <link rel="stylesheet" href="/assets/css/sign.css">
+        <?php endif; ?>
+        <?php if($path === 'admin'): ?>
+            <link rel="stylesheet" href="/assets/css/view.css">
+            <link rel="stylesheet" href="/assets/css/admin.css">
         <?php endif; ?>
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1129195909796860029/1177757899800465429/icon.png?ex=6573ab84&is=65613684&hm=be8d91607f53ee0aff36df26d6e45a7ea3ae164f6b248fb10ea6181f918e7cfb&">
         <!-- Font Awesome CSS link -->
@@ -34,6 +39,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <?php require_once __DIR__ . '/../views/partials/view.php'; ?>
         <?= $content ?>
         <?php require_once __DIR__.'/../views/partials/footer.php'; ?>
         <!-- Slick sliders JQuery and JS scripts -->
@@ -49,6 +55,9 @@
         <?php if($path === 'wishlist'): ?>
         <script src="/assets/js/home.js"></script>
         <script src="/assets/js/wishlist.js"></script>
+        <?php endif; ?>
+        <?php if($path === 'admin'): ?>
+            <script src="/assets/js/admin.js"></script>
         <?php endif; ?>
     </body>
 </html>
